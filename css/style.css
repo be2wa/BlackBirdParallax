@@ -39,16 +39,44 @@ img {
   margin-top: -50px;
 }
 
-.fore-bird {
-  width: 960px;
+.wood {
+  width: 444px;
   height: 733px;
-  background-image: url(../img/fore-bird.png);
+  background-image: url(../img/wood.png);
+  background-repeat: no-repeat;
+  background-position: -34px;
+  position: absolute;
+  left: 56%;
+  top: 380px;
+  border: 3px dashed transparent;
+}
+
+.wood:before {
+  content: '';
+  position: absolute;
+  width: 365px;
+  bottom: 0;
+  left: -16px;
+  height: 593px;
+  border: 3px dashed transparent;
+}
+
+.wood.hovered:before {
+  border-color: black;
+}
+
+.wood-left {
+  left: 4%;
+  top: 340px;
+}
+
+.bird {
+  width: 444px;
+  height: 183px;
+  background-image: url(../img/bird.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 380px;
 }
 
 .back-bird {
@@ -60,4 +88,8 @@ img {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.invisible {
+  display: none;
 }
