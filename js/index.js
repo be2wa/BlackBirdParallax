@@ -35,6 +35,7 @@
   }
 
   function dragEnd() {
+    bird.classList.remove('invisible');
     for(const wood of woods) {
       wood.classList.remove('hovered');
     }
